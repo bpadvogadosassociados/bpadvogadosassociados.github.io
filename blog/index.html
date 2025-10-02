@@ -1,11 +1,173 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog Jurídico - Bruno Pessôa Advogados</title>
+    
+    <!-- SEO -->
+    <meta name="description" content="Artigos e notícias sobre Direito. Mantenha-se informado com conteúdo jurídico de qualidade.">
+    <meta name="keywords" content="blog jurídico, direito, advocacia, artigos jurídicos">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
 </head>
 <body>
-    <a href="../index.html">Inicio</a> | <a href="../servicos.html">Serviços</a> | <a href="index.html">Blog</a> | <a href="../contato.html">Contato</a>
+    <header>
+        <div class="logo"><a href="../index.html">Bruno Pessoa</a></div>
+        <nav>
+            <a href="../servicos.html">Serviços</a>
+            <a href="index.html">Blog</a>
+            <a href="../sobre.html">Sobre</a>
+            <a href="../contato.html" class="btn-contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="blog-hero">
+        <h1>Blog Jurídico</h1>
+        <div class="divider"></div>
+        <p>Artigos, análises e notícias sobre o mundo do Direito. Conteúdo de qualidade para mantê-lo sempre informado.</p>
+    </section>
+
+    <main class="blog-container">
+        <!-- Filtro de Categorias -->
+        <div class="categories">
+            <button class="category-btn active">Todos</button>
+            <button class="category-btn">Direito Civil</button>
+            <button class="category-btn">Direito Empresarial</button>
+            <button class="category-btn">Direito Trabalhista</button>
+            <button class="category-btn">Direito do Consumidor</button>
+            <button class="category-btn">Atualidades</button>
+        </div>
+
+        <!-- Grid de Posts -->
+        <div class="posts-grid">
+            <!-- Post em Destaque -->
+            <article class="post-card featured-post">
+                <div class="post-image">📰</div>
+                <div class="post-content">
+                    <span class="featured-badge">Em Destaque</span>
+                    <div class="post-meta">
+                        <span class="post-category">Direito Civil</span>
+                        <span>•</span>
+                        <span>15 de Outubro, 2025</span>
+                    </div>
+                    <h2 class="post-title">Novas Regras do Código Civil: O que Muda para Você</h2>
+                    <p class="post-excerpt">Entenda as principais alterações no Código Civil e como elas podem impactar seu dia a dia. Analisamos as mudanças mais relevantes e suas consequências práticas para cidadãos e empresas.</p>
+                    <a href="post-destaque.html" class="read-more">Ler artigo completo →</a>
+                </div>
+            </article>
+
+            <!-- Post Normal 1 -->
+            <article class="post-card">
+                <div class="post-image">⚖️</div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-category">Direito Empresarial</span>
+                        <span>•</span>
+                        <span>12 de Outubro, 2025</span>
+                    </div>
+                    <h2 class="post-title">Como Proteger sua Empresa Juridicamente</h2>
+                    <p class="post-excerpt">Dicas essenciais para blindar seu negócio contra riscos jurídicos e garantir operações seguras e em conformidade.</p>
+                    <a href="post-exemplo.html" class="read-more">Ler mais →</a>
+                </div>
+            </article>
+
+            <!-- Post Normal 2 -->
+            <article class="post-card">
+                <div class="post-image">💼</div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-category">Direito Trabalhista</span>
+                        <span>•</span>
+                        <span>10 de Outubro, 2025</span>
+                    </div>
+                    <h2 class="post-title">Direitos do Trabalhador: Guia Completo 2025</h2>
+                    <p class="post-excerpt">Conheça seus direitos trabalhistas atualizados conforme a legislação vigente e saiba como reivindicá-los.</p>
+                    <a href="post-exemplo.html" class="read-more">Ler mais →</a>
+                </div>
+            </article>
+
+            <!-- Post Normal 3 -->
+            <article class="post-card">
+                <div class="post-image">🛡️</div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-category">Direito do Consumidor</span>
+                        <span>•</span>
+                        <span>08 de Outubro, 2025</span>
+                    </div>
+                    <h2 class="post-title">LGPD: Como Proteger seus Dados Pessoais</h2>
+                    <p class="post-excerpt">Entenda seus direitos sob a Lei Geral de Proteção de Dados e como exigir que empresas protejam suas informações.</p>
+                    <a href="post-exemplo.html" class="read-more">Ler mais →</a>
+                </div>
+            </article>
+
+            <!-- Post Normal 4 -->
+            <article class="post-card">
+                <div class="post-image">📋</div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-category">Atualidades</span>
+                        <span>•</span>
+                        <span>05 de Outubro, 2025</span>
+                    </div>
+                    <h2 class="post-title">Principais Decisões do STF em Setembro</h2>
+                    <p class="post-excerpt">Resumo das decisões mais importantes do Supremo Tribunal Federal e seus impactos na sociedade brasileira.</p>
+                    <a href="post-exemplo.html" class="read-more">Ler mais →</a>
+                </div>
+            </article>
+
+            <!-- Post Normal 5 -->
+            <article class="post-card">
+                <div class="post-image">🏠</div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-category">Direito Civil</span>
+                        <span>•</span>
+                        <span>02 de Outubro, 2025</span>
+                    </div>
+                    <h2 class="post-title">Guia Prático: Como Fazer um Contrato de Aluguel</h2>
+                    <p class="post-excerpt">Passo a passo para elaborar um contrato de locação seguro, com todas as cláusulas essenciais para proteger ambas as partes.</p>
+                    <a href="post-exemplo.html" class="read-more">Ler mais →</a>
+                </div>
+            </article>
+
+            <!-- Post Normal 6 -->
+            <article class="post-card">
+                <div class="post-image">👨‍⚖️</div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-category">Direito Empresarial</span>
+                        <span>•</span>
+                        <span>28 de Setembro, 2025</span>
+                    </div>
+                    <h2 class="post-title">Sociedade Limitada vs MEI: Qual Escolher?</h2>
+                    <p class="post-excerpt">Comparativo detalhado entre os tipos de empresa mais comuns no Brasil e qual se adequa melhor ao seu negócio.</p>
+                    <a href="post-exemplo.html" class="read-more">Ler mais →</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <address>
+            Suporte: <a href="mailto:midia.bpadvogadosassociados@gmail.com">midia.bpadvogadosassociados@gmail.com</a>
+        </address>
+        <p class="copyright">&copy; Todos os direitos reservados a Bruno Pessôa - Advogados Associados</p>
+    </footer>
+
+    <script>
+        // Filtro de categorias (funcionalidade básica)
+        const categoryBtns = document.querySelectorAll('.category-btn');
+        
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Aqui você pode adicionar lógica de filtro se tiver muitos posts
+                console.log('Filtro selecionado:', this.textContent);
+            });
+        });
+    </script>
 </body>
 </html>
