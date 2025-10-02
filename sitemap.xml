@@ -3,7 +3,7 @@
   
   <!-- Página Principal -->
   <url>
-    <loc>https://seuusuario.github.io/seu-repo/</loc>
+    <loc>https://bpadvogadosassociados.github.io</loc>
     <lastmod>2025-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -11,7 +11,7 @@
   
   <!-- Serviços -->
   <url>
-    <loc>https://seuusuario.github.io/seu-repo/servicos.html</loc>
+    <loc>https://bpadvogadosassociados.github.io/servicos.html</loc>
     <lastmod>2025-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -19,7 +19,7 @@
   
   <!-- Sobre -->
   <url>
-    <loc>https://seuusuario.github.io/seu-repo/sobre.html</loc>
+    <loc>https://bpadvogadosassociados.github.io/sobre.html</loc>
     <lastmod>2025-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -27,7 +27,7 @@
   
   <!-- Contato -->
   <url>
-    <loc>https://seuusuario.github.io/seu-repo/contato.html</loc>
+    <loc>https://bpadvogadosassociados.github.io/contato.html</loc>
     <lastmod>2025-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -35,7 +35,7 @@
   
   <!-- Blog -->
   <url>
-    <loc>https://seuusuario.github.io/seu-repo/blog/index.html</loc>
+    <loc>https://bpadvogadosassociados.github.io/blog/index.html</loc>
     <lastmod>2025-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
