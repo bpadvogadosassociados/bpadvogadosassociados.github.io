@@ -1,0 +1,1090 @@
+/* ========================================
+   ESTILOS GLOBAIS E RESET
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #2d2d2d 0%, #3a3a3a 50%, #2d2d2d 100%);
+    color: #fff;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* ========================================
+   HEADER E NAVEGAÇÃO
+   ======================================== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #c9a86a;
+}
+
+.btn-contato {
+    border: 1px solid #c9a86a;
+    padding: 10px 25px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.btn-contato:hover {
+    background-color: #c9a86a;
+    color: #2d2d2d;
+}
+
+/* ========================================
+   PÁGINA INICIAL - HERO SECTION
+   ======================================== */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-logo {
+    margin-bottom: 40px;
+}
+
+.logo-symbol {
+    font-size: 80px;
+    color: #c9a86a;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    text-shadow: 3px 4px rgb(37, 36, 36);
+}
+
+.logo-text {
+    font-size: 18px;
+    letter-spacing: 4px;
+    color: #b8b8b8;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.logo-subtext {
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.divider {
+    width: 60px;
+    height: 1px;
+    background-color: #c9a86a;
+    margin: 15px auto;
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+h1 .highlight {
+    color: #c9a86a;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #c4c4c4;
+    margin-bottom: 40px;
+    font-family: Arial, sans-serif;
+    max-width: 750px;
+}
+
+.cta-button {
+    background-color: #c9a86a;
+    color: #2d2d2d;
+    padding: 16px 40px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #b8965a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(201, 168, 106, 0.3);
+}
+
+/* ========================================
+   SEÇÃO DE ESCRITÓRIOS (PÁGINA INICIAL)
+   ======================================== */
+
+.offices {
+    padding: 40px 20px;
+    width: 100%;
+}
+
+.offices .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.offices h1 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color: #c9a86a;
+}
+
+.offices .subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #c4c4c4;
+    margin-bottom: 40px;
+    font-family: Arial, sans-serif;
+}
+
+#map {
+    width: 100%;
+    height: 600px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+#map::before {
+    content: 'Carregando mapa...';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #c9a86a;
+    font-size: 18px;
+    z-index: 0;
+}
+
+.offices .offices-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.offices .office-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid rgba(201, 168, 106, 0.2);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.offices .office-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #c9a86a;
+    transform: translateY(-3px);
+}
+
+.office-card h3 {
+    color: #c9a86a;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.office-card p {
+    color: #c4c4c4;
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    margin-bottom: 8px;
+}
+
+.office-card .phone {
+    color: #888;
+    font-size: 13px;
+}
+
+/* Customização do popup do Leaflet */
+.leaflet-popup-content-wrapper {
+    background: #2d2d2d;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.leaflet-popup-content {
+    margin: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.leaflet-popup-content h3 {
+    color: #c9a86a;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.leaflet-popup-content p {
+    margin: 5px 0;
+    font-size: 13px;
+    color: #c4c4c4;
+}
+
+.leaflet-popup-tip {
+    background: #2d2d2d;
+}
+
+.leaflet-popup-close-button {
+    color: #c9a86a !important;
+    font-size: 20px !important;
+}
+
+.leaflet-container {
+    height: 100%;
+    width: 100%;
+}
+
+/* ========================================
+   PÁGINA SOBRE - HERO SECTION
+   ======================================== */
+
+.hero-about {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1920');
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+}
+
+.hero-about::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 1);
+    z-index: -1;
+}
+
+.hero-content {
+    z-index: 1;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: #c9a86a;
+    font-family: 'Arial', sans-serif;
+}
+
+/* ========================================
+   PÁGINA SOBRE - SEÇÕES
+   ======================================== */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding: 100px 20px;
+    background-color: #0f0f0f;
+}
+
+.about-content {
+    padding: 20px;
+}
+
+.section-label {
+    color: #c9a86a;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.about-content h2 {
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+.about-content p {
+    font-size: 16px;
+    color: #b8b8b8;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    text-align: justify;
+}
+
+.about-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Diferenciais */
+.differentials {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+    padding: 80px 20px;
+}
+
+.differentials h2 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+.differentials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.differential-item {
+    text-align: center;
+    padding: 30px;
+    background: rgba(201, 168, 106, 0.05);
+    border-radius: 8px;
+    border: 1px solid rgba(201, 168, 106, 0.1);
+    transition: all 0.3s ease;
+}
+
+.differential-item:hover {
+    background: rgba(201, 168, 106, 0.1);
+    transform: translateY(-5px);
+    border-color: #c9a86a;
+}
+
+.differential-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(201, 168, 106, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 28px;
+}
+
+.differential-item h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #c9a86a;
+}
+
+.differential-item p {
+    font-size: 14px;
+    color: #999;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estatísticas */
+.stats-section {
+    background-color: #c9a86a;
+    padding: 80px 20px;
+    color: #2a2a2a;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Nossa Missão */
+.mission-section {
+    padding: 100px 20px;
+    background-color: #0a0a0a;
+    text-align: center;
+}
+
+.mission-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.mission-content h2 {
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.mission-content p {
+    font-size: 18px;
+    color: #b8b8b8;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.mission-pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.pillar {
+    padding: 40px 30px;
+    background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.pillar:hover {
+    border-color: #c9a86a;
+    transform: translateY(-5px);
+}
+
+.pillar h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #c9a86a;
+}
+
+.pillar p {
+    font-size: 14px;
+    color: #999;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, #c9a86a 0%, #b8965a 100%);
+    padding: 80px 20px;
+    text-align: center;
+    color: #2a2a2a;
+}
+
+.cta-section h2 {
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+}
+
+.cta-section .cta-button {
+    display: inline-block;
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 18px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    font-family: 'Arial', sans-serif;
+}
+
+.cta-section .cta-button:hover {
+    background-color: #1a1a1a;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ========================================
+   PÁGINA SERVIÇOS
+   ======================================== */
+
+/* Título da seção de serviços */
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+    padding-top: 30px;
+}
+
+.section-title {
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: #999;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Grid de cards - FIXO em 4 colunas */
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Card individual */
+.area-card {
+    background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.area-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(145deg, rgba(201, 168, 106, 0.05), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.area-card:hover::before {
+    opacity: 1;
+}
+
+.area-card:hover {
+    border-color: #c9a86a;
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(201, 168, 106, 0.2);
+}
+
+/* Ícone do card */
+.card-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(201, 168, 106, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    transition: all 0.4s ease;
+}
+
+.area-card:hover .card-icon {
+    background: rgba(201, 168, 106, 0.2);
+    transform: scale(1.1);
+}
+
+.card-icon svg {
+    width: 36px;
+    height: 36px;
+    fill: #c9a86a;
+}
+
+/* Título do card */
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #e0e0e0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Descrição do card */
+.card-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+/* Lista de especialidades */
+.specialties-list {
+    list-style: none;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.specialties-list li {
+    font-size: 13px;
+    color: #aaa;
+    padding: 8px 0 8px 20px;
+    border-bottom: 1px solid #222;
+    position: relative;
+}
+
+.specialties-list li:last-child {
+    border-bottom: none;
+}
+
+.specialties-list li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #c9a86a;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* ========================================
+   PÁGINA CONTATO
+   ======================================== */
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #2d2d2d 0%, #3a3a3a 50%, #2d2d2d 100%);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Coluna esquerda - Texto */
+.left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 80px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.logo-contato {
+    font-size: 48px;
+    font-style: italic;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.logo-subtitle {
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #ccc;
+    margin-bottom: 60px;
+    font-weight: 300;
+}
+
+.left-content h1 {
+    font-size: 42px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    font-weight: 400;
+    color: #e0e0e0;
+}
+
+.left-content .description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #b8b8b8;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Coluna direita - Formulário */
+.right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 80px;
+    background: rgba(20, 20, 20, 0.6);
+}
+
+.form-header {
+    margin-bottom: 40px;
+}
+
+.form-title {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #d0d0d0;
+    font-weight: 300;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilos do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 13px;
+    color: #b0b0b0;
+    margin-bottom: 8px;
+    display: block;
+    font-family: 'Arial', sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 14px 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #c9a86a;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+input::placeholder {
+    color: #666;
+}
+
+select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23999' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+}
+
+select option {
+    background-color: #333;
+    color: #fff;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Checkbox customizado */
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+.checkbox-label {
+    font-size: 12px;
+    color: #999;
+    line-height: 1.5;
+}
+
+.checkbox-label a {
+    color: #c9a86a;
+    text-decoration: underline;
+}
+
+/* Botão de envio */
+.submit-btn {
+    background-color: #c9a86a;
+    color: #2a2a2a;
+    padding: 16px 40px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.submit-btn:hover {
+    background-color: #b8965a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(201, 168, 106, 0.3);
+}
+
+/* ========================================
+   RODAPÉ
+   ======================================== */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding: 30px 20px;
+    margin-top: 60px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+footer a {
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.copyright {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* ========================================
+   RESPONSIVIDADE
+   ======================================== */
+
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Página Inicial */
+    h1 {
+        font-size: 32px;
+    }
+
+    .logo-symbol {
+        font-size: 60px;
+    }
+
+    #map {
+        height: 400px;
+    }
+
+    .offices .offices-list {
+        grid-template-columns: 1fr;
+    }
+
+    /* Página Sobre */
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .about-section {
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+    }
+
+    .about-content h2,
+    .differentials h2,
+    .mission-content h2,
+    .cta-section h2 {
+        font-size: 32px;
+    }
+
+    .mission-pillars {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Página Serviços */
+    .areas-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .area-card {
+        padding: 30px 25px;
+    }
+
+    /* Página Contato */
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+
+    .left-content,
+    .right-content {
+        padding: 40px 25px;
+    }
+
+    .left-content {
+        min-height: auto;
+    }
+
+    .left-content h1 {
+        font-size: 28px;
+    }
+
+    .logo-contato {
+        font-size: 36px;
+    }
+
+    .form-title {
+        font-size: 16px;
+    }
+
+    /* Footer */
+    footer {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Página Serviços */
+    .areas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Página Contato */
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+
+    .left-content,
+    .right-content {
+        padding: 50px 40px;
+    }
+
+    .left-content {
+        min-height: auto;
+    }
+
+    .left-content h1 {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    /* Página Serviços */
+    .areas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
