@@ -16,8 +16,8 @@
                 lat: -22.8253691,
                 lng: -43.3314418
             }
-            {
-              /*  name: "Escritório Brasília",
+            /*{
+                name: "Escritório Brasília",
                 address: "SCS Quadra 1 - Brasília, DF",
                 phone: "(61) 3000-0000",
                 email: "blablabla@algumprovedor.com.br",
