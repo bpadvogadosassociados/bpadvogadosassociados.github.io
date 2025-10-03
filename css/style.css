@@ -1233,6 +1233,8 @@ input[type="checkbox"] {
     background-color: #c9a86a;
     margin-top: 20px;
     margin-bottom: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .divider2 {
