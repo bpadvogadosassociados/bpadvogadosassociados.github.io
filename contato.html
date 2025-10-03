@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Bruno Pessôa Advogados Associados</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel>
 </head>
 <body>
     <header>
@@ -42,7 +43,7 @@
                 </p>
             </div>
 
-            <form>
+            <form id="myForm">
                 <div>
                     <label>Nome*</label>
                     <input type="text" required>
@@ -77,10 +78,13 @@
                 </div>
 
                 <div>
-                    <label>3 + 7 = ?</label>
-                    <input type="text" placeholder="Digite a resposta" required>
+                    <label id="captchaLabel"></label>
+                    <input type="text" id="captchaInput" placeholder="Digite a resposta" required>
+                    <div id="captchaErro" style="color:red; font-size:0.9em; display:none;"></div>
                 </div>
 
+                <script src="/js/captcha.js"></script>
+                
                 <div>
                     <label>Mensagem*</label>
                     <textarea required></textarea>
