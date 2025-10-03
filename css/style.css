@@ -1552,6 +1552,10 @@ footer a {
         gap: 20px;
     }
 
+    .breadcrumb {
+        display: nome;
+}
+
     .separator {
         display: block;
     }
