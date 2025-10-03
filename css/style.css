@@ -995,7 +995,7 @@ input[type="checkbox"] {
 }
 
 /* Card do Post */
-.post-card {
+.post {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(201, 168, 106, 0.2);
     border-radius: 12px;
@@ -1004,7 +1004,7 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
-.post-card:hover {
+.post:hover {
     transform: translateY(-5px);
     border-color: #c9a86a;
     box-shadow: 0 10px 30px rgba(201, 168, 106, 0.2);
