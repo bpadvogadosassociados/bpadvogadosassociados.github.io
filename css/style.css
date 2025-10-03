@@ -1074,7 +1074,7 @@ input[type="checkbox"] {
 }
 
 /* Post em Destaque */
-.featured-post {
+#featured-post {
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1082,24 +1082,24 @@ input[type="checkbox"] {
     margin-bottom: 30px;
 }
 
-.featured-post .post-image {
+#featured-post .post-image {
     height: 100%;
     min-height: 350px;
 }
 
-.featured-post .post-content {
+#featured-post .post-content {
     padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.featured-post .post-title {
+#featured-post .post-title {
     font-size: 32px;
     margin-bottom: 18px;
 }
 
-.featured-badge {
+#featured-badge {
     background: #c9a86a;
     color: #2d2d2d;
     padding: 5px 15px;
