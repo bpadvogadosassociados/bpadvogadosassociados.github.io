@@ -1664,14 +1664,34 @@ footer a {
         font-size: 24px;
     }
 
+    .title-mobile {
+       display:none;
+    }
+
     /* Blog - Post Individual */
     .article-title {
-        font-size: 32px;
+        font-size: 28px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+        white-space: normal;
+    }
+
+    .article-header {
+       padding: 0 20px;
     }
 
     .article-meta {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .title-full {
+       display: none;
+    }
+
+    .title-mobile {
+       display: block;
     }
 
     .featured-image-placeholder {
