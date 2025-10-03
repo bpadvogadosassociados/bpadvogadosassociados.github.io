@@ -31,22 +31,22 @@
         <!-- Filtro de Categorias -->
         <div class="categories">
             <button class="category-btn active">Todos</button>
-            <button class="category-btn">Direito Civil</button>
-            <button class="category-btn">Direito Empresarial</button>
-            <button class="category-btn">Direito Trabalhista</button>
-            <button class="category-btn">Direito do Consumidor</button>
-            <button class="category-btn">Atualidades</button>
+            <button class="category-btn" data-category="Direito Civil">Direito Civil</button>
+            <button class="category-btn" data-category="Direito Previdenciario">Direito Previdenciario</button>
+            <button class="category-btn" data-category="Direito Trabalhista">Direito Trabalhista</button>
+            <button class="category-btn" data-category="Direito do Consumidor">Direito do Consumidor</button>
+            <button class="category-btn" data-category="Atualidades">Atualidades</button>
         </div>
 
         <!-- Grid de Posts -->
         <div class="posts-grid">
             <!-- Post em Destaque -->
-            <article class="post-card featured-post">
+            <article class="post-card" id="featured-post" data-category="Direito Civil">
                 <div class="post-image">📰</div>
                 <div class="post-content">
                     <span class="featured-badge">Em Destaque</span>
                     <div class="post-meta">
-                        <span class="post-category">Direito Civil</span>
+                        <span class="post-category" >Direito Civil</span>
                         <span>•</span>
                         <span>15 de Outubro, 2025</span>
                     </div>
@@ -57,7 +57,7 @@
             </article>
 
             <!-- Post Normal 1 -->
-            <article class="post-card">
+            <article class="post-card" data-category="Direito Previdenciario">
                 <div class="post-image">⚖️</div>
                 <div class="post-content">
                     <div class="post-meta">
@@ -72,7 +72,7 @@
             </article>
 
             <!-- Post Normal 2 -->
-            <article class="post-card">
+            <article class="post-card" data-category="Direito Trabalhista">
                 <div class="post-image">💼</div>
                 <div class="post-content">
                     <div class="post-meta">
@@ -87,7 +87,7 @@
             </article>
 
             <!-- Post Normal 3 -->
-            <article class="post-card">
+            <article class="post-card" data-category="Direito do Consumidor">
                 <div class="post-image">🛡️</div>
                 <div class="post-content">
                     <div class="post-meta">
@@ -102,7 +102,7 @@
             </article>
 
             <!-- Post Normal 4 -->
-            <article class="post-card">
+            <article class="post-card" data-category="Atualidades">
                 <div class="post-image">📋</div>
                 <div class="post-content">
                     <div class="post-meta">
