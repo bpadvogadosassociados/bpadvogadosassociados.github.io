@@ -1552,9 +1552,17 @@ footer a {
         gap: 20px;
     }
 
-    .breadcrumb {
-        display: nome;
+    .divider-header1 {
+        display: none;
+    }
+
+    .divider-header2 {
+        display: none;
 }
+
+    .breadcrumb {
+        display: none;
+    }
 
     .separator {
         display: block;
