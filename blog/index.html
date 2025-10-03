@@ -154,22 +154,31 @@
         </address>
         <p class="copyright">&copy; Todos os direitos reservados a Bruno Pessôa - Advogados Associados</p>
     </footer>
-<!--
-    <script>
-        // Filtro de categorias (funcionalidade básica)
-        const categoryBtns = document.querySelectorAll('.category-btn');
-        
-        categoryBtns.forEach(btn => {
-            btn.addEventListener('click', function() {
-                categoryBtns.forEach(b => b.classList.remove('active'));
-                this.classList.add('active');
-                
-                // Aqui você pode adicionar lógica de filtro se tiver muitos posts
-                console.log('Filtro selecionado:', this.textContent);
-            });
-        });
-    </script>
-    -->
-    <script src=""../js/filter-blog.js></script>
+
+    
+<script>
+const buttons = document.querySelectorAll(".categories button");
+const posts = document.querySelectorAll("post-card");
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    const category = button.getAttribute("data-category");
+
+    // esconder todos
+    posts.forEach(post-card => {
+      post-card.style.display = "none";
+    });
+
+    // mostrar apenas os da categoria clicada
+    posts.forEach(post-card => {
+      if (post-card.getAttribute("data-category") === category) {
+        post-card.style.display = "block";
+      }
+    });
+  });
+});
+</script>
+    
+    <!--<script src=""../js/filter-blog.js></script>-->
 </body>
 </html>
