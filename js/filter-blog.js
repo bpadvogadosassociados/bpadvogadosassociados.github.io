@@ -1,4 +1,3 @@
-<script>
 const buttons = document.querySelectorAll(".categories button");
 const posts = document.querySelectorAll("post-card");
 
@@ -19,4 +18,3 @@ buttons.forEach(button => {
     });
   });
 });
-</script>
