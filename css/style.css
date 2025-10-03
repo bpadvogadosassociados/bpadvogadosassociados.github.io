@@ -1225,16 +1225,26 @@ input[type="checkbox"] {
     margin-bottom: 10px;
 }
 
-.divider-header {
+.divider1 {
+    grid-column: 2;
+    grid-row: 1;
     width: 50%;
     height: 1px;
     background-color: #c9a86a;
     margin: 40px 10px;
 }
 
+.divider2 {
+   grid-column: 2;
+   grid-row: 3;
+   width: 50%;
+   height: 1px;
+   background-color: #c9a86a;
+}
+
 .article-excerpt {
     grid-column: 2;
-    grid-row: 1;
+    grid-row: 2;
     font-size: 18px;
     line-height: 1.7;
     color: #c4c4c4;
