@@ -1681,10 +1681,8 @@ footer a {
        padding: 0 20px;
     }
 
-    .article-meta {
-       display: none;
-        flex-direction: column;
-        gap: 10px;
+    .article-meta span{
+        display: none;
     }
 
     .title-full {
