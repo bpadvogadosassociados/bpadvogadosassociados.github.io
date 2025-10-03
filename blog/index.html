@@ -41,7 +41,7 @@
         <!-- Grid de Posts -->
         <div class="posts-grid">
             <!-- Post em Destaque -->
-            <article class="post-card" id="featured-post" data-category="Direito Civil">
+            <article class="post" id="featured-post" data-category="Direito Civil">
                 <div class="post-image">📰</div>
                 <div class="post-content">
                     <span class="featured-badge">Em Destaque</span>
@@ -57,7 +57,7 @@
             </article>
 
             <!-- Post Normal 1 -->
-            <article class="post-card" data-category="Direito Previdenciario">
+            <article class="post" data-category="Direito Previdenciario">
                 <div class="post-image">⚖️</div>
                 <div class="post-content">
                     <div class="post-meta">
@@ -72,7 +72,7 @@
             </article>
 
             <!-- Post Normal 2 -->
-            <article class="post-card" data-category="Direito Trabalhista">
+            <article class="post" data-category="Direito Trabalhista">
                 <div class="post-image">💼</div>
                 <div class="post-content">
                     <div class="post-meta">
@@ -87,7 +87,7 @@
             </article>
 
             <!-- Post Normal 3 -->
-            <article class="post-card" data-category="Direito do Consumidor">
+            <article class="post" data-category="Direito do Consumidor">
                 <div class="post-image">🛡️</div>
                 <div class="post-content">
                     <div class="post-meta">
@@ -102,7 +102,7 @@
             </article>
 
             <!-- Post Normal 4 -->
-            <article class="post-card" data-category="Atualidades">
+            <article class="post" data-category="Atualidades">
                 <div class="post-image">📋</div>
                 <div class="post-content">
                     <div class="post-meta">
@@ -117,7 +117,7 @@
             </article>
 
             <!-- Post Normal 5 -->
-            <article class="post-card">
+            <article class="post" data-category="Direito Civil">
                 <div class="post-image">🏠</div>
                 <div class="post-content">
                     <div class="post-meta">
@@ -132,7 +132,7 @@
             </article>
 
             <!-- Post Normal 6 -->
-            <article class="post-card">
+            <article class="post" data-category="Direito Previdenciario">
                 <div class="post-image">👨‍⚖️</div>
                 <div class="post-content">
                     <div class="post-meta">
@@ -158,21 +158,35 @@
     
 <script>
 const buttons = document.querySelectorAll(".categories button");
-const posts = document.querySelectorAll("post-card");
+const posts = document.querySelectorAll(".post");
 
 buttons.forEach(button => {
   button.addEventListener("click", () => {
+
+      //remove class active dos botões
+      buttons.forEach(btn.classList.remove("active"));
+
+      //adiciona active no botão clicado
+      button.classList.add("active");
+      
     const category = button.getAttribute("data-category");
 
+    if (!category || button.textContent.trim() === "Todos") {
+        posts.forEach(post => {
+            post.style.display = "block";
+        });
+        return;
+    }
+
     // esconder todos
-    posts.forEach(post-card => {
-      post-card.style.display = "none";
+    posts.forEach(post => {
+      post.style.display = "none";
     });
 
     // mostrar apenas os da categoria clicada
-    posts.forEach(post-card => {
-      if (post-card.getAttribute("data-category") === category) {
-        post-card.style.display = "block";
+    posts.forEach(post => {
+      if (post.getAttribute("data-category") === category) {
+        post.style.display = "block";
       }
     });
   });
