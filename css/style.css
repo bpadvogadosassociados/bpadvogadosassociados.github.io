@@ -1257,6 +1257,7 @@ input[type="checkbox"] {
     font-family: Arial, sans-serif;
     font-weight: 300;
     align-self: center;
+    padding-top: 15px;
     padding-left: 20px;
 }
 
