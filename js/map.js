@@ -4,7 +4,7 @@
                 name: "Escritório Campos dos Goytacazes - RJ",
                 address: "Praça São Salvador, 41 Loja 6 - Rio de Janeiro, RJ",
                 phone: "(22) 99925-2211",
-                email: "blablabla@algumprovedor.com.br",
+                email: "bp.advogados.iraja@gmail.com",
                 lat: -21.756202,
                 lng: -41.323076
             },
@@ -12,7 +12,7 @@
                 name: "Escritório Irajá RJ",
                 address: "R. Menezes Prado, 94 - Irajá, RJ",
                 phone: "(21) 98256-3275",
-                email: "blablabla@algumprovedor.com.br",
+                email: "bp.advogados.iraja@gmail.com",
                 lat: -22.8253691,
                 lng: -43.3314418
             }
