@@ -1,20 +1,20 @@
 <script>
-const buttons = document.querySelectorAll(".filters button");
-const posts = document.querySelectorAll(".post");
+const buttons = document.querySelectorAll(".categories button");
+const posts = document.querySelectorAll("post-card");
 
 buttons.forEach(button => {
   button.addEventListener("click", () => {
     const category = button.getAttribute("data-category");
 
     // esconder todos
-    posts.forEach(post => {
-      post.style.display = "none";
+    posts.forEach(post-card => {
+      post-card.style.display = "none";
     });
 
     // mostrar apenas os da categoria clicada
-    posts.forEach(post => {
-      if (post.getAttribute("data-category") === category) {
-        post.style.display = "block";
+    posts.forEach(post-card => {
+      if (post-card.getAttribute("data-category") === category) {
+        post-card.style.display = "block";
       }
     });
   });
