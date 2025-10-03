@@ -164,7 +164,7 @@ buttons.forEach(button => {
   button.addEventListener("click", () => {
 
       //remove class active dos botões
-      buttons.forEach(btn.classList.remove("active"));
+      buttons.forEach(btn => btn.classList.remove("active"));
 
       //adiciona active no botão clicado
       button.classList.add("active");
