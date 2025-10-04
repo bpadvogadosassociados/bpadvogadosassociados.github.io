@@ -993,6 +993,42 @@ input[type="checkbox"] {
     transform: translateY(-2px);
 }
 
+/*Paginação Categorias*/
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.page-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(201, 168, 106, 0.3);
+    color: #c4c4c4;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: all 0.3s;
+    min-width: 40px;
+}
+
+.page-btn:hover {
+    background: rgba(201, 168, 106, 0.2);
+    border-color: #c9a86a;
+    color: #c9a86a;
+}
+
+.page-btn.active {
+    background: #c9a86a;
+    border-color: #c9a86a;
+    color: #2d2d2d;
+    font-weight: 600;
+}
+
 /* Grid de Posts */
 .posts-grid {
     display: grid;
@@ -1223,29 +1259,6 @@ input[type="checkbox"] {
     align-items: center;
     gap: 5px;
     margin-bottom: 10px;
-}
-
-.divider-header1 {
-    grid-column: 2;
-    grid-row: 1;
-    width: 50%;
-    height: 1px;
-    background-color: #c9a86a;
-    margin-top: 20px;
-    margin-bottom: 70px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.divider-header2 {
-   grid-column: 2;
-   grid-row: 3;
-   width: 50%;
-   height: 1px;
-   background-color: #c9a86a;
-   margin-top:10px;
-   margin-left: 10px;
-   margin-right: 10px;
 }
 
 .article-excerpt {
@@ -1526,6 +1539,135 @@ input[type="checkbox"] {
     margin: 0;
 }
 
+/*Calculadora INSS*/
+/* Calculadora de Aposentadoria */
+.calculator-box {
+    background: rgba(201, 168, 106, 0.08);
+    border: 1px solid rgba(201, 168, 106, 0.3);
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.calculator-box h3 {
+    margin-top: 0;
+    color: #c9a86a;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.calc-field {
+    margin-bottom: 20px;
+}
+
+.calc-field label {
+    display: block;
+    margin-bottom: 8px;
+    color: #c9a86a;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.calc-field input,
+.calc-field select {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.calc-field input:focus,
+.calc-field select:focus {
+    outline: none;
+    border-color: #c9a86a;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.calc-button {
+    width: 100%;
+    background-color: #c9a86a;
+    color: #2d2d2d;
+    padding: 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.calc-button:hover {
+    background-color: #b8965a;
+    transform: translateY(-2px);
+}
+
+.calc-result {
+    margin-top: 30px;
+}
+
+.result-content {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid #c9a86a;
+}
+
+.result-content h4 {
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.result-content h4.success {
+    color: #4CAF50;
+}
+
+.result-content h4.warning {
+    color: #FF9800;
+}
+
+.result-content .error {
+    color: #f44336;
+}
+
+.valor-destaque {
+    font-size: 24px;
+    color: #c9a86a;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.percentual {
+    text-align: center;
+    color: #b8b8b8;
+    margin-bottom: 20px;
+}
+
+.dica-box,
+.info-box {
+    background: rgba(201, 168, 106, 0.1);
+    padding: 15px;
+    border-radius: 6px;
+    margin: 15px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.disclaimer {
+    font-size: 12px;
+    color: #888;
+    margin-top: 20px;
+    font-style: italic;
+    text-align: center;
+}
+
 /* ========================================
    RODAPÉ
    ======================================== */
@@ -1564,14 +1706,6 @@ footer a {
         padding: 20px;
         gap: 20px;
     }
-
-    .divider-header1 {
-        display: none;
-    }
-
-    .divider-header2 {
-        display: none;
-}
 
     .breadcrumb {
         display: none;
