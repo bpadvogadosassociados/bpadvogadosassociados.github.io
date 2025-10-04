@@ -114,5 +114,7 @@ buttons.forEach(button => {
     });
 });
 
-// Inicializa
-renderPosts();
+// Inicializa quando a página carregar
+document.addEventListener('DOMContentLoaded', function() {
+    renderPosts();
+});
