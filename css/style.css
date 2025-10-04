@@ -1103,7 +1103,7 @@ input[type="checkbox"] {
 
 #featured-post .post-image {
     height: 100%;
-    min-height: 350px;
+    min-height: 300px;
     overflow: hidden;
 }
 
