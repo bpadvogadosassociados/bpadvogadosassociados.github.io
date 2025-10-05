@@ -39,6 +39,10 @@ body {
     transform: rotate(90deg);
  }
 
+  header button {
+     display: none;
+  }
+
 /* Overlay escuro quando menu aberto */
   .nav-overlay {
     display: none;
@@ -1754,6 +1758,10 @@ footer a {
     .hamburger {
         display: block;
         order: 1;
+    }
+
+    header button {
+       display: inline;
     }
 
     .logo {
