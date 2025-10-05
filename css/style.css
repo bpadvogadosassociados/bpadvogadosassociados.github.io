@@ -1798,10 +1798,11 @@ footer a {
         width: 100%;
     }
 
-    nav a:last-child {
+    /* nav a:last-child {
         border-bottom: none;
     }
-
+    */
+   
     .btn-contato {
         margin-top: 20px;
         text-align: center;
