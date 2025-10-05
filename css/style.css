@@ -19,14 +19,50 @@ body {
 /* ========================================
    HEADER E NAVEGAÇÃO
    ======================================== */
+/* Menu Hamburger - Mobile */
+  .hambuger {
+    display: none;
+    background: none;
+    border: none;
+    color: #c9a86a;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+}  
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 60px;
-    background-color: rgba(0, 0, 0, 1);
+  .hamburger i {
+    transition: transform 0.3s;
+ }
+
+  .hamburger.active i {
+    transform: rotate(90deg);
+ }
+
+/* Overlay escuro quando menu aberto */
+  .nav-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
 }
+
+  .nav-overlay.active {
+     display: block;
+  }
+   
+/* Menu Padrao - Computador */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 60px;
+        background-color: rgba(0, 0, 0, 1);
+    }
 
     .separator {
         width: 100px;
@@ -1707,24 +1743,66 @@ footer a {
    ======================================== */
 
 @media (max-width: 768px) {
-    /* Header */
+    /* Header com Menu Hamburger */
     header {
-        flex-direction: column;
-        padding: 20px;
-        gap: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 20px;
+        position: relative;
     }
 
-    .breadcrumb {
-        display: none;
-    }
-
-    .separator {
+    .hamburger {
         display: block;
+        order: 1;
+    }
+
+    .logo {
+        order: 2;
+        flex: 1;
+        text-align: center;
     }
 
     nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 280px;
+        height: 100vh;
+        background: #1a1a1a;
         flex-direction: column;
-        gap: 20px;
+        justify-content: flex-start;
+        padding: 80px 30px 30px;
+        gap: 0;
+        transition: left 0.3s ease;
+        z-index: 1000;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    nav.active {
+        left: 0;
+    }
+
+    nav a {
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(201, 168, 106, 0.1);
+        text-align: left;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    nav a:last-child {
+        border-bottom: none;
+    }
+
+    .btn-contato {
+        margin-top: 20px;
+        text-align: center;
+        padding: 12px 25px;
+    }
+
+    .breadcrumb {
+        padding: 0 20px;
+        margin: 20px 0 0 0;
     }
 
     /* Página Inicial */
@@ -1742,6 +1820,123 @@ footer a {
 
     .offices .offices-list {
         grid-template-columns: 1fr;
+    }
+
+    /* Blog - Página Inicial */
+    .blog-hero h1 {
+        font-size: 32px;
+    }
+
+    .posts-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #featured-post {
+        grid-template-columns: 1fr;
+    }
+
+    #featured-post .post-image {
+        min-height: 250px;
+    }
+
+    #featured-post .post-content {
+        padding: 25px;
+    }
+
+    #featured-post .post-title {
+        font-size: 24px;
+    }
+
+    /* Blog - Post Individual - LAYOUT MOBILE DIFERENTE */
+    
+    /* Imagem aparece PRIMEIRO */
+    .featured-image {
+        order: -1;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .featured-image-placeholder {
+        height: 250px;
+        border-radius: 0;
+    }
+
+    /* Header do artigo fica DEPOIS da imagem */
+    .article-header {
+        order: 1;
+        margin: 0;
+        padding: 25px 20px;
+        background: transparent;
+        border: none;
+        text-align: center;
+    }
+
+    .article-category {
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    .article-title {
+        font-size: 26px;
+        margin-bottom: 20px;
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    .article-meta {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .article-excerpt {
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+        padding: 0;
+    }
+
+    /* Container do conteúdo */
+    .article-content {
+        font-size: 16px;
+        padding: 0 20px;
+        order: 2;
+    }
+
+    .article-content h2 {
+        font-size: 24px;
+    }
+
+    .article-content h3 {
+        font-size: 20px;
+    }
+
+    /* Calculadora */
+    .calculator-box {
+        padding: 25px 20px;
+    }
+
+    /* Paginação */
+    .pagination {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .page-btn {
+        padding: 8px 12px;
+        font-size: 13px;
+        min-width: 36px;
+    }
+
+    /* Posts Relacionados */
+    .related-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .related-posts h2 {
+        font-size: 28px;
     }
 
     /* Página Sobre */
@@ -1807,77 +2002,6 @@ footer a {
 
     .form-title {
         font-size: 16px;
-    }
-
-    /* Blog - Página Inicial */
-    .blog-hero h1 {
-        font-size: 36px;
-    }
-
-    .posts-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .featured-post {
-        grid-template-columns: 1fr;
-    }
-
-    .featured-post .post-content {
-        padding: 25px;
-    }
-
-    .featured-post .post-title {
-        font-size: 24px;
-    }
-
-    .title-mobile {
-       display:none;
-    }
-
-    /* Blog - Post Individual */
-    .article-title {
-        font-size: 28px;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        hyphens: auto;
-        white-space: normal;
-    }
-
-    .article-header {
-       padding: 0 20px;
-    }
-
-    .article-meta span{
-        display: none;
-    }
-
-    .title-full {
-       display: none;
-    }
-
-    .title-mobile {
-       display: block;
-    }
-
-    .featured-image-placeholder {
-        height: 300px;
-        font-size: 60px;
-    }
-
-    .article-content {
-        font-size: 16px;
-    }
-
-    .article-content h2 {
-        font-size: 26px;
-    }
-
-    .article-content h3 {
-        font-size: 20px;
-    }
-
-    .related-grid {
-        grid-template-columns: 1fr;
     }
 
     /* Footer */
