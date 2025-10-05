@@ -4,7 +4,7 @@
   <!-- Página Principal -->
   <url>
     <loc>https://bpadvogadosassociados.github.io/</loc>
-    <lastmod>2025-10-02</lastmod>
+    <lastmod>2025-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,7 +12,7 @@
   <!-- Serviços -->
   <url>
     <loc>https://bpadvogadosassociados.github.io/servicos.html</loc>
-    <lastmod>2025-10-02</lastmod>
+    <lastmod>2025-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -20,7 +20,7 @@
   <!-- Sobre -->
   <url>
     <loc>https://bpadvogadosassociados.github.io/sobre.html</loc>
-    <lastmod>2025-10-02</lastmod>
+    <lastmod>2025-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -28,7 +28,7 @@
   <!-- Contato -->
   <url>
     <loc>https://bpadvogadosassociados.github.io/contato.html</loc>
-    <lastmod>2025-10-02</lastmod>
+    <lastmod>2025-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -36,9 +36,64 @@
   <!-- Blog -->
   <url>
     <loc>https://bpadvogadosassociados.github.io/blog/index.html</loc>
-    <lastmod>2025-10-02</lastmod>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Featured-post -->
+  <url>
+    <loc>https://bpadvogadosassociados.github.io/blog/featured_post.html</loc>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+<!-- Post01 -->
+  <url>
+    <loc>https://bpadvogadosassociados.github.io/blog/post01.html</loc>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+<!-- Post 02 -->
+  <url>
+    <loc>https://bpadvogadosassociados.github.io/blog/post02.html</loc>
+    <lastmod>2025-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
+<!-- Post03 -->
+  <url>
+    <loc>https://bpadvogadosassociados.github.io/blog/post03.html</loc>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+<!-- Post04 -->
+  <url>
+    <loc>https://bpadvogadosassociados.github.io/blog/post04.html</loc>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+<!-- Post05 -->
+  <url>
+    <loc>https://bpadvogadosassociados.github.io/blog/post05.html</loc>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+<!-- Post06 -->
+  <url>
+    <loc>https://bpadvogadosassociados.github.io/blog/post06.html</loc>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
