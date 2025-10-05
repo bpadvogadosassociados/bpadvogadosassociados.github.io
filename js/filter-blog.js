@@ -3,30 +3,34 @@ const POSTS_PER_PAGE = 6;
 let currentPage = 1;
 let currentCategory = 'Todos';
 
-// Todos os posts (adicione mais conforme criar)
-const allPosts = [
-    // Os posts que já existem no HTML...
-    // Depois adicione novos posts aqui
-];
-
 const buttons = document.querySelectorAll(".category-btn");
-const postsGrid = document.querySelector(".posts-grid");
+const featuredPost = document.getElementById('featured-post');
 
 // Função para renderizar posts
 function renderPosts() {
+    // Pega todos os posts EXCETO o featured
+    const allPosts = document.querySelectorAll('.post:not(#featured-post)');
+    
     // Filtrar por categoria
     let filteredPosts = currentCategory === 'Todos' 
-        ? document.querySelectorAll('.post')
-        : document.querySelectorAll(`.post[data-category="${currentCategory}"]`);
-    
-    filteredPosts = Array.from(filteredPosts);
+        ? Array.from(allPosts)
+        : Array.from(allPosts).filter(post => 
+            post.getAttribute('data-category') === currentCategory
+          );
     
     // Calcular índices
     const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
     const endIndex = startIndex + POSTS_PER_PAGE;
     
-    // Esconder todos
-    document.querySelectorAll('.post').forEach(post => {
+    // Controlar visibilidade do post em destaque
+    if (currentCategory === 'Todos') {
+        featuredPost.style.display = 'grid'; // Mostra com layout especial
+    } else {
+        featuredPost.style.display = 'none'; // Esconde quando filtra
+    }
+    
+    // Esconder todos os posts normais
+    allPosts.forEach(post => {
         post.style.display = 'none';
     });
     
