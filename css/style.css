@@ -1866,13 +1866,79 @@ footer a {
         margin: 20px 0 0 0;
     }
 
-    /* Página Inicial */
-    h1 {
-        font-size: 32px;
+    main {
+        margin-top: 62px;
     }
 
-    .logo-symbol {
-        font-size: 60px;
+    /* Página Inicial */
+
+    /* Hero Mobile */
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+        gap: 40px;
+        text-align: center;
+        min-height: calc(100vh - 62px);
+    }
+
+    .hero-content {
+        order: 1;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .hero-tagline {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .cta-button {
+        align-self: center;
+        width: 100%;
+        max-width: 350px;
+        margin-top: 10px;
+    }
+
+    /* Descript Mobile */
+    .descript {
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+        gap: 30px;
+    }
+
+    .descript-image {
+        display: none;
+    }
+
+    .descript-content {
+        gap: 20px;
+    }
+
+    .descript-title {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .descript-subtitle {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .descriptions {
+        font-size: 15px;
+        text-align: center;
+        line-height: 1.8;
     }
 
     #map {
