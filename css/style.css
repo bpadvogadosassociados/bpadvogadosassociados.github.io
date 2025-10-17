@@ -1805,11 +1805,15 @@ footer a {
         justify-content: space-between;
         padding: 15px 20px;
         position: relative;
+        gap: 15px;
     }
 
     .hamburger {
+        background: transparent;
         display: block;
         order: 1;
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
     }
 
     header button {
