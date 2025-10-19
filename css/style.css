@@ -10,7 +10,7 @@
 
 body {
     font-family: Georgia, serif;
-    background-color: linear-gradient(135deg, #2d2d2d 0%, #3a3a3a 50%, #2d2d2d 100%);
+    background: linear-gradient(135deg, #2d2d2d 0%, #3a3a3a 50%, #2d2d2d 100%);
     color: #fff;
     min-height: 100vh;
     line-height: 1.6;
